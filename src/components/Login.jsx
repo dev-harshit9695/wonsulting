@@ -18,7 +18,7 @@ const Login = () => {
       <div className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10 sm:w-full sm:max-w-md">
         <div className="text-center">
           <img className="mx-auto h-12 w-auto" src={wonsultingLogo} alt="Wonsulting" />
-          <h2 className="mt-6 text-3xl font-extrabold text-gray-900">Sign in to your account</h2>
+          <h2 className="mt-6 text-3xl font-extrabold text-gray-900">Login to your account</h2>
         </div>
 
         {/* Form section */}
