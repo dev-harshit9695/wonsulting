@@ -10,7 +10,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
-        <Route path="/cv-uplaod" element={<CVupload/>}/>
+        <Route path="/cv-upload" element={<CVupload/>}/>
       </Routes>
     </div>
   );
