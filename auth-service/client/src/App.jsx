@@ -3,6 +3,7 @@ import Login from './components/Login';
 import Signup from './components/Signup';
 import CVupload from './components/CVupload';
 import Editprofile from './components/Editprofile';
+import ChatPage from './components/ChatPage';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/cv-upload" element={<CVupload/>}/>
         <Route path="/edit-profile" element={<Editprofile/>}/>
+        <Route path='/chat-page' element={<ChatPage/>}/>
       </Routes>
     </div>
   );
