@@ -257,11 +257,7 @@ const Chatbot = () => {
         {/* Header */}
         <div className="flex items-center justify-between p-6 bg-white shadow-sm">
           <div className="flex items-center space-x-3">
-            <img src="logo.png" alt="Logo" className="w-10 h-10 rounded-full" />
             <h1 className="text-xl font-semibold text-gray-800">SayHalo</h1>
-          </div>
-          <div>
-            <img src="user-icon.png" alt="User Icon" className="w-8 h-8 rounded-full" />
           </div>
         </div>
 
@@ -274,16 +270,16 @@ const Chatbot = () => {
                 message.type === 'user' ? 'justify-end' : 'justify-start'
               } space-x-3`}
             >
-              {message.type === 'bot' && (
+              {message.type === '' && (
                 <img
-                  src="bot-icon.png"
-                  alt="Bot"
+                  src=""
+                  alt=""
                   className="w-10 h-10 rounded-full shadow-md"
                 />
               )}
               <div
                 className={`${
-                  message.type === 'bot'
+                  message.type === ''
                     ? 'bg-gray-100 text-left'
                     : 'bg-purple-500 text-right text-white'
                 } p-4 rounded-lg max-w-lg shadow-md`}
@@ -300,7 +296,7 @@ const Chatbot = () => {
         {/* Typing Indicator */}
         {isTyping && (
           <div className="flex space-x-3 items-center px-6 py-4">
-            <img src="bot-icon.png" alt="Bot" className="w-10 h-10 rounded-full shadow-md" />
+            
             <p className="text-gray-500 italic">Typing...</p>
           </div>
         )}
